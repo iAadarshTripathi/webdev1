@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Aadarsh</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        #contact {
+            background-color: #fff;
+            padding: 40px 20px;
+        }
+
+        #contact .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        #contact h2 {
+            text-align: center;
+            color: #3498db;
+            margin-bottom: 40px;
+        }
+
+        form {
+            display: grid;
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="text"], input[type="email"] {
+            background-color: #f9f9f9;
+        }
+
+        textarea {
+            background-color: #f9f9f9;
+            height: 150px;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        p a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent page reload on form submit
+            alert('Your message has been sent!');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact Me</h1>
+            <p>Feel free to get in touch with me for collaborations, inquiries, or just a friendly chat!</p>
+        </div>
+    </header>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Send a Message</h2>
+            <form onsubmit="handleSubmit(event)">
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="email" name="email" placeholder="Your Email" required><br>
+                <input type="text" name="subject" placeholder="Subject"><br>
+                <textarea name="message" placeholder="Your Message" required></textarea><br>
+                <button type="submit">Send Message</button>
+            </form>
+            <p>
+                <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/your-profile" target="_blank">GitHub</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 [Aadarsh] All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

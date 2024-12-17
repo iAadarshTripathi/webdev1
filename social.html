@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media - Aadarsh</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+            transition: background-color 0.3s;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid #2980b9;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        #social-media {
+            background-color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        #social-media h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #3498db;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a {
+            font-size: 2.5rem;
+            color: #333;
+            text-decoration: none;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #2980b9;
+            transform: scale(1.1);
+        }
+
+        .social-links img {
+            border-radius: 15px;
+            width: 60px;
+            height: 60px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            font-size: 1rem;
+            border-top: 4px solid #2980b9;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #3498db;
+        }
+
+        /* Animation for Header */
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        header {
+            animation: slideIn 1s ease-out;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            #social-media h2 {
+                font-size: 2rem;
+            }
+
+            .social-links {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .social-links a {
+                font-size: 2rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Social Media</h1>
+            <p>Connect with me on various platforms!</p>
+        </div>
+    </header>
+
+    <section id="social-media">
+        <div class="container">
+            <h2>Follow Me On</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/aadarsh-tripathi-40243a318/" target="_blank" title="LinkedIn">
+                    <img src="linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/iAadarshTripathi" target="_blank" title="GitHub">
+                    <img src="github.png" alt="GitHub">
+                </a>
+                <a href="https://twitter.com/your-profile" target="_blank" title="Twitter">
+                    <img src="twitter.avif" alt="Twitter">
+                </a>
+                <a href="https://facebook.com/your-profile" target="_blank" title="Facebook">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                </a>
+                <a href="https://instagram.com/your-profile" target="_blank" title="Instagram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Aadarsh | All Rights Reserved</p>
+            <p><a href="mailto:aadarsh@example.com">Email me</a> for inquiries or collaboration.</p>
+        </div>
+    </footer>
+</body>
+</html>
